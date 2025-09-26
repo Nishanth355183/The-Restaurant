@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  background: url('https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/healthyspaghettibolo_80401_16x9.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff6b35;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.muted {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#contactForm {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm button {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background: #555;
+}
+
+#confirmation {
+  margin-top: 15px;
+  background: #e8fff4;
+  border-left: 4px solid #18a67a;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+}
+
+footer .socials a {
+  color: #ff6b35;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff6b35;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}

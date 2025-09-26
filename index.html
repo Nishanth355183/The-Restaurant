@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">My Restaurant</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero">
+    <div class="inner">
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Delicious meals served with love — seasonal ingredients, honest cooking.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/healthyspaghettibolo_80401_16x9.jpg" alt="">
+          <div class="card-body">
+            <h3>Spaghetti Bolognese</h3>
+            <p class="muted">Italian classic with slow-cooked meat sauce and parmesan.</p>
+            <div class="price">₹600</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://healthyrecipesblogs.com/wp-content/uploads/2019/07/grilled-salmon-featured-2021.jpg" alt="">
+          <div class="card-body">
+            <h3>Grilled Salmon</h3>
+            <p class="muted">Fresh salmon, charred and finished with lemon herb butter.</p>
+            <div class="price">₹850</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://b.zmtcdn.com/data/reviews_photos/527/4a06064a957fe6085baedaa7ccad5527_1736858303.jpg" alt="">
+          <div class="card-body">
+            <h3>Culinary Haven</h3>
+            <p class="muted">Chef's special: seasonal seafood with garden vegetables.</p>
+            <div class="price">₹800</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://www.foodiesfeed.com/wp-content/uploads/ff-images/2025/01/colorful-bowl-of-deliciousness-with-fried-egg.png" alt="">
+          <div class="card-body">
+            <h3>Breakfast Bowl</h3>
+            <p class="muted">Hearty grains, roasted veg, and a sunny-side-up egg.</p>
+            <div class="price">₹550</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="plat.png" alt="">
+          <div class="card-body">
+            <h3>Chef's Platter</h3>
+            <p class="muted">A selection of small plates to share.</p>
+            <div class="price">₹700</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://brentherrig.com/wp-content/uploads/2020/06/fish-and-summer-vegetable.jpg" alt="">
+          <div class="card-body">
+            <h3>Summer Fish</h3>
+            <p class="muted">Pan-seared fish with seasonal vegetables.</p>
+            <div class="price">₹950</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="https://static-cse.canva.com/blob/982605/FoodPhotographyProps33.jpg" alt="">
+          <div class="card-body">
+            <h3>Classic Pasta</h3>
+            <p class="muted">Comforting pasta, tossed with a light sauce.</p>
+            <div class="price">₹500</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="Chicken-Biryani-Recipe.jpg" alt="">
+          <div class="card-body">
+            <h3>Chicken Biryani</h3>
+            <p class="muted">Aromatic basmati rice with marinated chicken and spices.</p>
+            <div class="price">₹300</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="Paneer-Butter-Masala-2-3.jpg" alt="">
+          <div class="card-body">
+            <h3>Paneer Butter Masala</h3>
+            <p class="muted">Creamy tomato curry with soft paneer cubes.</p>
+            <div class="price">₹280</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="dosa.ong.jpg" alt="">
+          <div class="card-body">
+            <h3>Masala Dosa</h3>
+            <p class="muted">Crispy dosa filled with spiced potato curry.</p>
+            <div class="price">₹120</div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <center>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We take pride in simple, honest dishes made from seasonal and locally-sourced ingredients. Our kitchen focuses on technique and flavor, bringing a warm dining experience whether you're with family or friends.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="confirmation" class="hidden">
+        <h3>Thank you for your message!</h3>
+        <p><strong>Name:</strong> <span id="confirmName"></span></p>
+        <p><strong>Email:</strong> <span id="confirmEmail"></span></p>
+        <p><strong>Message:</strong> <span id="confirmMessage"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> My Restaurant · All rights reserved</p>
+    <p>Email: contact@myrestaurant.com | Phone: +91 98765 43210</p>
+    <div class="socials">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <button id="backToTop">↑ Top</button>
+  <script src="script.js"></script>
+  </body>
+</body>
+</html>
